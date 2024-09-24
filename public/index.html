@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>License Key Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">
+            <span>
+              <img
+                width="100px"
+                src="https://res.cloudinary.com/lulius-innovation/image/upload/v1535228273/ASDICO_tvn9lx.png"
+                alt="ASD"
+              />
+            </span>
+            License Key Management
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Generate License Key</h3>
+          <form id="generateForm">
+            <div class="form-group">
+              <label for="generateLocation">Customer Random Number</label>
+              <input
+                type="text"
+                id="generateLocation"
+                class="form-control"
+                placeholder="Enter Number Form Node"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Generate License
+            </button>
+          </form>
+          <div
+            id="generateResult"
+            class="alert alert-success"
+            style="display: none; margin-top: 10px"
+          ></div>
+        </div>
+
+        <div class="col-md-6">
+          <h3>Validate License Key</h3>
+          <form id="validateForm">
+            <div class="form-group">
+              <label for="validateLocation">Customer Random Number</label>
+              <input
+                type="text"
+                id="validateLocation"
+                class="form-control"
+                placeholder="Enter Number form Node"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="licenseKey">License Key</label>
+              <input
+                type="text"
+                id="licenseKey"
+                class="form-control"
+                placeholder="Enter license key"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Validate License
+            </button>
+          </form>
+          <div
+            id="validateResult"
+            class="alert alert-info"
+            style="display: none; margin-top: 10px"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

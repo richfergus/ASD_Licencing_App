@@ -1,0 +1,17 @@
+{
+  "name": "license-app",
+  "version": "1.0.0",
+  "description": "A Node.js and Express app for generating and validating license keys",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^3.1.7"
+  }
+}
